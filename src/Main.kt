@@ -8,6 +8,8 @@ object Main {
 
 //        ReverseString.reverseString(charArrayOf('h','e','l','l','o'))
 
-        ReverseVowelsInString.reverseVowels("\"Revolt, love!\" raved Eva. \"Revolt, lover!\"")
+//        ReverseVowelsInString.reverseVowels("\"Revolt, love!\" raved Eva. \"Revolt, lover!\"")
+
+        FirstUniqueCharacter.firstUniqChar("loveleetcode")
     }
 }
