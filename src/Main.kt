@@ -6,6 +6,8 @@ object Main {
 //        val testArray = arrayOf("flower","flow","flight")
 //        LongestCommonPrefix.longestCommonPrefix(testArray)
 
-        ReverseString.reverseString(charArrayOf('h','e','l','l','o'))
+//        ReverseString.reverseString(charArrayOf('h','e','l','l','o'))
+
+        ReverseVowelsInString.reverseVowels("\"Revolt, love!\" raved Eva. \"Revolt, lover!\"")
     }
 }

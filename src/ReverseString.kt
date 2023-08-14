@@ -13,8 +13,6 @@ class ReverseString {
                 s[index] = tmpRightEdgeElement
             }
 
-            s
-
         }
 
     }
