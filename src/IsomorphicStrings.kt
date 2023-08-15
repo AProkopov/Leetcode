@@ -59,6 +59,4 @@ class IsomorphicStrings {
 
             return true
         }
-
-    }
 }

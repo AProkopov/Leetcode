@@ -12,6 +12,10 @@ object Main {
 
 //        FirstUniqueCharacter.firstUniqChar("loveleetcode")
 
-        IsomorphicStrings.isIsomorphic("paper", "title")
+//        IsomorphicStrings.isIsomorphic("paper", "title")
+
+//        LongestPalindrome.longestPalindrome("abccccdd")
+
+        CountSegments.countSegments("Hello, my name is John")
     }
 }
