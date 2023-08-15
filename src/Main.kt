@@ -10,6 +10,8 @@ object Main {
 
 //        ReverseVowelsInString.reverseVowels("\"Revolt, love!\" raved Eva. \"Revolt, lover!\"")
 
-        FirstUniqueCharacter.firstUniqChar("loveleetcode")
+//        FirstUniqueCharacter.firstUniqChar("loveleetcode")
+
+        IsomorphicStrings.isIsomorphic("paper", "title")
     }
 }
