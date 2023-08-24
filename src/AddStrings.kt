@@ -2,46 +2,25 @@ import java.lang.StringBuilder
 
 class AddStrings {
     fun addStrings(num1: String, num2: String): String {
-        val smaller: String
-        val bigger: String
+        var i = num1.lastIndex
+        var j = num2.lastIndex
+        var carry = 0
         val stringBuilder = StringBuilder()
 
-        if (num1.length > num2.length) {
-            smaller = num2
-            bigger = num1
-        } else {
-            smaller = num1
-            bigger = num2
-        }
+        while (i >= 0 || j >= 0 || carry > 0) {
+            var sum: Int = 0
+            if (i >= 0) sum += num1[i] - '0'
+            if (j >= 0) sum += num2[j] - '0'
+            sum += carry
 
-        var smallerIndex = smaller.lastIndex
-        var transition = 0
+            stringBuilder.append(sum % 10)
+            carry = sum / 10
 
-        for (index in bigger.lastIndex downTo 0) {
-            var directSumResult = bigger[index].toString().toInt() + (if (smallerIndex >= 0) smaller[smallerIndex].toString().toInt() else 0) + transition
-            smallerIndex--
-            val sumToWrite: Int
-
-            if (directSumResult > 9) {
-                sumToWrite = directSumResult - 10
-                if (sumToWrite > 9) directSumResult - 20
-                transition = directSumResult / 10
-            } else {
-                sumToWrite = directSumResult
-                transition = 0
-            }
-
-            stringBuilder.append(sumToWrite)
-        }
-
-        if (transition != 0) {
-            stringBuilder.append(transition)
+            i--
+            j--
         }
 
 
-
-        val result = stringBuilder.toString().reversed()
-
-        return result
+        return stringBuilder.reversed().toString()
     }
 }
