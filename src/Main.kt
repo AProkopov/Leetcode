@@ -16,6 +16,8 @@ object Main {
 
 //        LongestPalindrome.longestPalindrome("abccccdd")
 
-        CountSegments.countSegments("Hello, my name is John")
+//        CountSegments.countSegments("Hello, my name is John")
+
+        FizzBuzz().fizzBuzz(15)
     }
 }
