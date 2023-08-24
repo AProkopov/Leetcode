@@ -18,6 +18,8 @@ object Main {
 
 //        CountSegments.countSegments("Hello, my name is John")
 
-        FizzBuzz().fizzBuzz(15)
+//        FizzBuzz().fizzBuzz(15)
+
+        AddStrings().addStrings("456", "77")
     }
 }
