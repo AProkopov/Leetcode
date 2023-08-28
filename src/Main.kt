@@ -22,6 +22,8 @@ object Main {
 
 //        AddStrings().addStrings("456", "77")
 
-        ValidWordAbbreviation().validWordAbbreviation("a", "2")
+//        ValidWordAbbreviation().validWordAbbreviation("a", "2")
+
+        MoveZeroes().moveZeroes(listOf(1,1).toIntArray())
     }
 }
