@@ -20,6 +20,8 @@ object Main {
 
 //        FizzBuzz().fizzBuzz(15)
 
-        AddStrings().addStrings("456", "77")
+//        AddStrings().addStrings("456", "77")
+
+        ValidWordAbbreviation().validWordAbbreviation("a", "2")
     }
 }
