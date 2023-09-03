@@ -1,32 +1,22 @@
 class CanPlaceFlowers {
     fun canPlaceFlowers(flowerbed: IntArray, n: Int): Boolean {
-        val initialFlowersCount = flowerbed.count { it == 1 }
-        var currentFlowerbed = mutableListOf<Int>().apply { addAll(flowerbed.toList()) }
+        var index = 0
+        var flowers = n
 
-        flowerbed.forEachIndexed { index, potState ->
-            if (potState == 0) {
-                if (currentFlowerbed.size == 1) {
-                    currentFlowerbed[index] = 1
-                } else if (index == 0) {
-                    if (currentFlowerbed[index + 1] == 0) {
-                        currentFlowerbed[index] = 1
-                    }
-                } else {
-                    if (index == currentFlowerbed.lastIndex) {
-                        if (currentFlowerbed[index - 1] == 0) {
-                            currentFlowerbed[index] = 1
-                        }
-                    } else {
-                        if (currentFlowerbed[index + 1] == 0 && currentFlowerbed[index - 1] == 0) {
-                            currentFlowerbed[index] = 1
-                        }
-                    }
+        while (index <= flowerbed.lastIndex) {
+            if (flowerbed[index] == 0) {
+                val left = if (index == 0) 0 else flowerbed[index - 1]
+                val right = if (index == flowerbed.lastIndex) 0 else flowerbed[index + 1]
+
+                if (left == 0 && right == 0) {
+                    flowerbed[index] = 1
+                    flowers--
                 }
-            } else {
-                //do noting
             }
+
+            index++
         }
 
-        return currentFlowerbed.count { it == 1 } - initialFlowersCount >= n
+        return flowers <= 0
     }
 }
