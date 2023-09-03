@@ -24,6 +24,9 @@ object Main {
 
 //        ValidWordAbbreviation().validWordAbbreviation("a", "2")
 
-        MoveZeroes().moveZeroes(listOf(1,1).toIntArray())
+//        MoveZeroes().moveZeroes(listOf(1,1).toIntArray())
+
+        val array = arrayOf(0,1,2,4,5,7).toIntArray()
+        SummaryRanges().summaryRanges(array)
     }
 }
