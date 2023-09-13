@@ -26,7 +26,12 @@ object Main {
 
 //        MoveZeroes().moveZeroes(listOf(1,1).toIntArray())
 
-        val array = arrayOf(0,1,2,4,5,7).toIntArray()
-        SummaryRanges().summaryRanges(array)
+//        val array = arrayOf(0,1,2,4,5,7).toIntArray()
+//        SummaryRanges().summaryRanges(array)
+
+//        val array = arrayOf(1,2,3,4,5,6,7).toIntArray()
+//        RotateArray().rotate(array, 3)
+
+        RotateString().rotateString("abcde", "cdeab")
     }
 }
