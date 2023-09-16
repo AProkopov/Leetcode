@@ -32,6 +32,7 @@ object Main {
 //        val array = arrayOf(1,2,3,4,5,6,7).toIntArray()
 //        RotateArray().rotate(array, 3)
 
-        RotateString().rotateString("abcde", "cdeab")
+//        RotateString().rotateString("abcde", "cdeab")
+        RotateArray2().rotate(listOf(-1,-100,3, 99).toIntArray(), 2)
     }
 }

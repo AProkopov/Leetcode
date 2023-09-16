@@ -1,6 +1,6 @@
 class CheckArrayRotated {
     //n^2 solution
-    fun check(nums: IntArray): Boolean {
+    fun checkN2(nums: IntArray): Boolean {
         val iterationsToRevert = nums.size - 1
 
         if (nums.isEmpty()) return true
