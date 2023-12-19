@@ -33,6 +33,9 @@ object Main {
 //        RotateArray().rotate(array, 3)
 
 //        RotateString().rotateString("abcde", "cdeab")
-        RotateArray2().rotate(listOf(-1,-100,3, 99).toIntArray(), 2)
+//        RotateArray2().rotate(listOf(-1,-100,3, 99).toIntArray(), 2)
+
+        val testData = arrayListOf("Hello","Alaska","Dad","Peace").toTypedArray()
+        KeyboardRow().findWords(testData)
     }
 }
