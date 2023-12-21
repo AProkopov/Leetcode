@@ -5,7 +5,7 @@ class ExcelColumnNumber {
     private val startIndex = 'A'.code
     private val alphabetLength = 26
 
-    fun titleToNumber(columnTitle: String): Int {
+    fun titleToNumberDeprecated(columnTitle: String): Int {
 
         val array = columnTitle.toCharArray()
         var result = 0
@@ -13,6 +13,18 @@ class ExcelColumnNumber {
         for (index in array.lastIndex downTo 0) {
             val number = array[index].code - startIndex + 1
             result += (number * (if (index - array.lastIndex != 0) alphabetLength.toDouble().pow(array.lastIndex - index).toInt() else 1))
+        }
+
+        return result
+    }
+
+    fun titleToNumber(columnTitle: String): Int {
+        val array = columnTitle.toCharArray()
+        var result = 0
+
+        array.forEachIndexed { index, c ->
+            val tmpNum = c.code - startIndex + 1
+            result += tmpNum * (alphabetLength.toDouble().pow(array.lastIndex - index).toInt())
         }
 
         return result
