@@ -39,6 +39,6 @@ object Main {
 //        KeyboardRow().findWords(testData)
 
 //        ExcelColumnNumber().titleToNumber("ZY")
-        ExcelColumnNumber().titleToNumber("FXSHRXW")
+        ExcelColumnNumber().titleToNumber("BAB")
     }
 }
