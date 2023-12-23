@@ -39,6 +39,10 @@ object Main {
 //        KeyboardRow().findWords(testData)
 
 //        ExcelColumnNumber().titleToNumber("ZY")
-        ExcelColumnNumber().titleToNumber("BAB")
+//        ExcelColumnNumber().titleToNumber("BAB")
+
+        val s = "abc"
+        val t = "ahbgdc"
+        IsSubsequence().isSubsequence(s, t)
     }
 }
