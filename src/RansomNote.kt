@@ -1,6 +1,6 @@
 class RansomNote {
 
-    fun canConstruct(ransomNote: String, magazine: String): Boolean {
+    fun canConstructWithMap(ransomNote: String, magazine: String): Boolean {
         val magazineLettersMap = mutableMapOf<Char, Int>()
 
         magazine.forEach {
@@ -14,6 +14,17 @@ class RansomNote {
             } else {
                 magazineLettersMap.put(it, magazineLettersMap.get(it)!! - 1)
             }
+        }
+
+        return true
+    }
+
+    fun canConstruct(ransomNote: String, magazine: String): Boolean {
+        val magazineCharsArray = magazine.toCharArray().toMutableList()
+        val noteArray = ransomNote.toCharArray().toTypedArray()
+
+        noteArray.forEach {
+            if (!magazineCharsArray.remove(it)) return false
         }
 
         return true
