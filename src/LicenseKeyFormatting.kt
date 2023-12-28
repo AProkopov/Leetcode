@@ -10,7 +10,7 @@ class LicenseKeyFormatting {
                 continue
             }
 
-            if (currentSegmentLength == 0 && i != charList.lastIndex) {
+            if (currentSegmentLength == 0 && formattedCharList.isNotEmpty()) {
                 formattedCharList.add('-')
             }
 
@@ -20,7 +20,6 @@ class LicenseKeyFormatting {
             if (currentSegmentLength == k) {
                 currentSegmentLength = 0
             }
-
         }
 
         return formattedCharList.joinToString("").reversed()

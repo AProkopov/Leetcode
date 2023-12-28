@@ -45,8 +45,8 @@ object Main {
 //        val t = "ahbgdc"
 //        IsSubsequence().isSubsequence(s, t)
 
-        val s = "2-5g-3-J"
-        val k = 2
+        val s = "a-a-a-a-"
+        val k = 1
         LicenseKeyFormatting().licenseKeyFormatting(s, k)
     }
 }
