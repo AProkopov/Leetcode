@@ -41,8 +41,12 @@ object Main {
 //        ExcelColumnNumber().titleToNumber("ZY")
 //        ExcelColumnNumber().titleToNumber("BAB")
 
-        val s = "abc"
-        val t = "ahbgdc"
-        IsSubsequence().isSubsequence(s, t)
+//        val s = "abc"
+//        val t = "ahbgdc"
+//        IsSubsequence().isSubsequence(s, t)
+
+        val s = "2-5g-3-J"
+        val k = 2
+        LicenseKeyFormatting().licenseKeyFormatting(s, k)
     }
 }
