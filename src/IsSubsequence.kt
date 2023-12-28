@@ -1,5 +1,5 @@
 class IsSubsequence {
-    fun isSubsequence(s: String, t: String): Boolean {
+    fun isSubsequenceOld(s: String, t: String): Boolean {
         val builder = StringBuilder()
         var startIndex = 0
 
@@ -23,4 +23,22 @@ class IsSubsequence {
 
         return builder.toString() == s
     }
+
+    fun isSubsequence(s: String, t: String): Boolean {
+        var sIndex = 0
+        var tIndex = 0
+
+        while (sIndex <= s.lastIndex && tIndex <= t.lastIndex) {
+            if (s[sIndex] == t[tIndex]) {
+                sIndex++
+            }
+
+            tIndex++
+        }
+
+
+        return sIndex == s.length
+    }
+
+
 }
