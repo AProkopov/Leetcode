@@ -45,8 +45,11 @@ object Main {
 //        val t = "ahbgdc"
 //        IsSubsequence().isSubsequence(s, t)
 
-        val s = "a-a-a-a-"
-        val k = 1
-        LicenseKeyFormatting().licenseKeyFormatting(s, k)
+//        val s = "a-a-a-a-"
+//        val k = 1
+//        LicenseKeyFormatting().licenseKeyFormatting(s, k)
+
+        val testData = arrayOf(1,1,1,1,0,1,1).toIntArray()
+        MaxConsecutiveOnes().findMaxConsecutiveOnes(testData)
     }
 }
