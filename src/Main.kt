@@ -49,7 +49,12 @@ object Main {
 //        val k = 1
 //        LicenseKeyFormatting().licenseKeyFormatting(s, k)
 
-        val testData = arrayOf(1,1,1,1,0,1,1).toIntArray()
-        MaxConsecutiveOnes().findMaxConsecutiveOnes(testData)
+//        val testData = arrayOf(1,1,1,1,0,1,1).toIntArray()
+//        MaxConsecutiveOnes().findMaxConsecutiveOnes(testData)
+
+        val nums1 = arrayOf(2,4).toIntArray()
+        val nums2 = arrayOf(1,2,3,4).toIntArray()
+
+        NextGreaterElement().nextGreaterElement(nums1, nums2)
     }
 }
