@@ -56,6 +56,9 @@ object Main {
 //        val nums2 = arrayOf(1,2,3,4).toIntArray()
 //        NextGreaterElement().nextGreaterElement(nums1, nums2)
 
-        FibonacciNumber().fib(3)
+//        FibonacciNumber().fib(3)
+
+        val nums = listOf(-1).toIntArray()
+        MissingRanges().findMissingRanges(nums, -2, 0)
     }
 }
