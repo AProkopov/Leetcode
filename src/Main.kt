@@ -58,7 +58,10 @@ object Main {
 
 //        FibonacciNumber().fib(3)
 
-        val nums = listOf(-1).toIntArray()
-        MissingRanges().findMissingRanges(nums, -2, 0)
+//        val nums = listOf(-1).toIntArray()
+//        MissingRanges().findMissingRanges(nums, -2, 0)
+
+        val nums = listOf(0,1,1,3,3).toIntArray()
+        FindMaxAverage().findMaxAverage(nums, 4)
     }
 }
