@@ -61,7 +61,10 @@ object Main {
 //        val nums = listOf(-1).toIntArray()
 //        MissingRanges().findMissingRanges(nums, -2, 0)
 
-        val nums = listOf(4,2,1,3,3).toIntArray()
-        FindMaxAverage().findMaxAverage(nums, 2)
+//        val nums = listOf(4,2,1,3,3).toIntArray()
+//        FindMaxAverage().findMaxAverage(nums, 2)
+
+        val words = listOf("practice", "makes", "perfect", "coding", "makes").toTypedArray()
+        ShortestWordDistance().shortestDistance(words, "coding", "practice")
     }
 }
