@@ -1,3 +1,5 @@
+import Coursera.Lecture_1.HelloGoodbye
+
 object Main {
     @JvmStatic
     fun main(args: Array<String>) {
@@ -64,7 +66,9 @@ object Main {
 //        val nums = listOf(4,2,1,3,3).toIntArray()
 //        FindMaxAverage().findMaxAverage(nums, 2)
 
-        val words = listOf("practice", "makes", "perfect", "coding", "makes").toTypedArray()
-        ShortestWordDistance().shortestDistance(words, "coding", "practice")
+//        val words = listOf("practice", "makes", "perfect", "coding", "makes").toTypedArray()
+//        ShortestWordDistance().shortestDistance(words, "coding", "practice")
+
+//        HelloGoodbye.main({"Alan"})
     }
 }
