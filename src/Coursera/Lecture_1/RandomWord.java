@@ -1,21 +1,21 @@
 package Coursera.Lecture_1;
 
 import edu.princeton.cs.algs4.StdIn;
-
-import java.util.ArrayList;
+import edu.princeton.cs.algs4.StdRandom;
 
 public class RandomWord {
-
     public static void main(String[] args) {
-
-        ArrayList<String> list = new ArrayList<String>();
+        String champion = "";
+        int i = 1;
 
         while (!StdIn.isEmpty()) {
             String word = StdIn.readString();
-            list.add(word);
+            if (StdRandom.bernoulli(1.0 / i)) {
+                champion = word;
+            }
+            i++;
         }
 
-        System.out.println(list.get(0));
+        System.out.println(champion);
     }
-
 }
