@@ -1,18 +1,17 @@
 package solutions_2026
 
-fun romanToInt(s: String): Int {
+fun romanToIntSlowSolution(s: String): Int {
     var pointer = -1
     var result = 0
-    val romanInput = s.toCharArray()
 
-    romanInput.forEachIndexed { index, c ->
+    s.forEachIndexed { index, c ->
         when {
             index <= pointer -> {
                 // do nothing
             }
 
-            index != romanInput.lastIndex && exclusions.containsKey(romanInput.get(index).toString() + romanInput.get(index + 1).toString()) -> {
-                result += exclusions[romanInput.get(index).toString() + romanInput.get(index + 1).toString()]!!
+            index != s.lastIndex && exclusions.containsKey(s.get(index).toString() + s.get(index + 1).toString()) -> {
+                result += exclusions[s.get(index).toString() + s.get(index + 1).toString()]!!
                 pointer = index + 1
             }
 
@@ -25,6 +24,30 @@ fun romanToInt(s: String): Int {
 
     return result
 }
+
+fun romanToInt(s: String): Int {
+    var result = 0
+
+    for (i in s.indices) {
+        val current = numbersMap[s[i].toString()]!!
+
+        if (i == s.lastIndex) {
+            result += current
+            break
+        }
+
+        val next = numbersMap[s[i + 1].toString()]!!
+
+        if (current < next) {
+            result -= current
+        } else {
+            result += current
+        }
+    }
+
+    return result
+}
+
 
 val numbersMap: Map<String, Int> = mapOf<String, Int>(
     "I" to 1,
