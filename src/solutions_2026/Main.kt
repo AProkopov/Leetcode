@@ -8,8 +8,11 @@ object Main {
 //        val target = 9
 //        TwoSum().twoSum(array, target)
 
-        val input = "MCDLXXVI"
-        romanToInt(input)
+//        val input = "MCDLXXVI"
+//        romanToInt(input)
+
+        val input = arrayOf("aa","ab")
+        LongestCommonPrefix().longestCommonPrefix(input)
 
     }
 }
