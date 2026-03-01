@@ -3,7 +3,6 @@ package solutions_2026
 class LongestCommonPrefix {
     fun longestCommonPrefix(strs: Array<String>): String {
         var shortestString: String? = null
-        val symbols = mutableMapOf<Char, Int>()
 
         strs.forEach {
             if (shortestString == null || it.length < shortestString!!.length) {
@@ -13,17 +12,13 @@ class LongestCommonPrefix {
 
         var longestPrefix = ""
         for (i in shortestString!!.indices) {
+            val expectedSymbol = shortestString!![i]
             strs.forEach { string ->
-                symbols.put(string[i], (symbols[string[i]] ?: 0) + 1)
+                if (string[i] != expectedSymbol) return longestPrefix
             }
-
-            if (symbols.keys.size > 1) {
-                return longestPrefix
-            } else {
-                longestPrefix += shortestString?.get(i)!!
-                symbols.clear()
-            }
+            longestPrefix += expectedSymbol
         }
+
         return longestPrefix
     }
 }
