@@ -11,8 +11,11 @@ object Main {
 //        val input = "MCDLXXVI"
 //        romanToInt(input)
 
-        val input = arrayOf("aa","ab")
-        LongestCommonPrefix().longestCommonPrefix(input)
+//        val input = arrayOf("aa","ab")
+//        LongestCommonPrefix().longestCommonPrefix(input)
+
+        val input = "()[]{)"
+        ValidParentheses().isValid(input)
 
     }
 }
