@@ -3,7 +3,7 @@
 /workspace.xml
 
 # IntelliJ build output
-out/
+.out/
 
 # Compiled class files
 *.class
