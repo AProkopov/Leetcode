@@ -14,8 +14,11 @@ object Main {
 //        val input = arrayOf("aa","ab")
 //        LongestCommonPrefix().longestCommonPrefix(input)
 
-        val input = "()[]{)"
-        ValidParentheses().isValid(input)
+//        val input = "()[]{)"
+//        ValidParentheses().isValid(input)
+
+        val input = 8
+        UglyNumber().isUgly(input)
 
     }
 }
