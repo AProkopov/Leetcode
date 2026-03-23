@@ -17,8 +17,11 @@ object Main {
 //        val input = "()[]{)"
 //        ValidParentheses().isValid(input)
 
-        val input = 8
-        UglyNumber().isUgly(input)
+//        val input = 8
+//        UglyNumber().isUgly(input)
+
+        val input = intArrayOf(0,1,2,3,4,5)
+        sortedArrayToBST(input)
 
     }
 }
