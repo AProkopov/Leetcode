@@ -23,9 +23,13 @@ object Main {
 //         val input = intArrayOf(0,1,2,3,4,5)
 //         sortedArrayToBST(input)
 
-        val input = intArrayOf(1,3,5,6)
-        val target = 2
-        SearchInsertPosition().searchInsertFaster(input, target)
+//        val input = intArrayOf(1,3,5,6)
+//        val target = 2
+//        SearchInsertPosition().searchInsertFaster(input, target)
+
+        val input_1 = "1010"
+        val input_2 = "1011"
+        addBinary(input_1, input_2)
 
     }
 }
