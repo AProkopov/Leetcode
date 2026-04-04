@@ -20,12 +20,12 @@ object Main {
 //        val input = 8
 //        UglyNumber().isUgly(input)
 
-        // val input = intArrayOf(0,1,2,3,4,5)
-        // sortedArrayToBST(input)
+//         val input = intArrayOf(0,1,2,3,4,5)
+//         sortedArrayToBST(input)
 
         val input = intArrayOf(1,3,5,6)
         val target = 2
-        SearchInsertPosition().searchInsert(input, target)
+        SearchInsertPosition().searchInsertFaster(input, target)
 
     }
 }
