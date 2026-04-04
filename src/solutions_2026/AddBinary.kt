@@ -1,7 +1,7 @@
 package solutions_2026
 
 fun addBinary(a: String, b: String): String {
-    val rawResult = (a.toInt() + b.toInt()).toString()
+    val rawResult = (a.toBigDecimal() + b.toBigDecimal()).toString()
 
     val values = mutableListOf<Int>()
     var move = 0
@@ -12,6 +12,12 @@ fun addBinary(a: String, b: String): String {
                 values.add(rawResult[i].digitToInt() + move)
                 move = 0
             }
+
+            rawResult[i].digitToInt() == 2 -> {
+                values.add(move)
+                move = 1
+            }
+
             else -> {
                 values.add(0)
                 move = 1
@@ -23,5 +29,5 @@ fun addBinary(a: String, b: String): String {
         values.add(move)
     }
 
-return values.reversed().joinToString { it.toString() }.replace(",", "")
+return values.reversed().joinToString { it.toString() }.replace(", ", "")
 }
