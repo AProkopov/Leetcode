@@ -1,6 +1,24 @@
 package solutions_2026
 
 fun addBinary(a: String, b: String): String {
+    var i = a.lastIndex
+    var j = b.lastIndex
+    var carry = 0
+    val stringBuffer = StringBuffer()
+
+    while (i >= 0 || j >= 0 || carry > 0) {
+        val localResult = carry + (if (i >= 0) a[i].digitToInt() else 0) + (if (j >= 0) b[j].digitToInt() else 0)
+        i--
+        j--
+
+        stringBuffer.append(localResult % 2)
+        carry = localResult / 2
+    }
+
+    return stringBuffer.reversed().toString()
+}
+
+fun addBinarySlow(a: String, b: String): String {
     val rawResult = (a.toBigDecimal() + b.toBigDecimal()).toString()
 
     val values = mutableListOf<Int>()
@@ -29,5 +47,5 @@ fun addBinary(a: String, b: String): String {
         values.add(move)
     }
 
-return values.reversed().joinToString { it.toString() }.replace(", ", "")
+    return values.asReversed().joinToString(separator = "") { it.toString() }
 }
