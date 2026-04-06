@@ -27,9 +27,12 @@ object Main {
 //        val target = 2
 //        SearchInsertPosition().searchInsertFaster(input, target)
 
-        val input_1 = "1111"
-        val input_2 = "1111"
-        addBinary(input_1, input_2)
+//        val input_1 = "1111"
+//        val input_2 = "1111"
+//        addBinary(input_1, input_2)
+
+        val input = intArrayOf(9,9,9)
+        PlusOne().plusOne(input)
 
     }
 }
