@@ -1,7 +1,22 @@
 package solutions_2026
 
 class PlusOne {
+
     fun plusOne(digits: IntArray): IntArray {
+        for(i in digits.lastIndex downTo 0) {
+            if (digits[i] == 9) {
+                digits[i] = 0
+            } else {
+                digits[i] = digits[i] + 1
+                return digits
+            }
+        }
+
+        return IntArray(digits.size + 1).also { it[0] = 1 }
+    }
+
+
+    fun plusOneBitComplexSolution(digits: IntArray): IntArray {
         var carry = 1
         var initialEntry = true
         var index = digits.lastIndex
