@@ -31,8 +31,11 @@ object Main {
 //        val input_2 = "1111"
 //        addBinary(input_1, input_2)
 
-        val input = intArrayOf(9,9,9)
-        PlusOne().plusOne(input)
+//        val input = intArrayOf(9,9,9)
+//        PlusOne().plusOne(input)
+
+        val input = intArrayOf(2,2,1,1,1,2,2)
+        MajorityElement().majorityElement(input)
 
     }
 }
