@@ -34,8 +34,12 @@ object Main {
 //        val input = intArrayOf(9,9,9)
 //        PlusOne().plusOne(input)
 
-        val input = intArrayOf(2,2,1,1,1,2,2)
-        MajorityElement().majorityElement(input)
+//        val input = intArrayOf(2,2,1,1,1,2,2)
+//        MajorityElement().majorityElementBoyerMoore(input)
+
+        val input_1 = "anagram"
+        val input_2 = "nagaram"
+        ValidAnagram().isAnagramFasterSolution(input_1, input_2)
 
     }
 }
