@@ -41,8 +41,15 @@ object Main {
 //        val input_2 = "nagaram"
 //        ValidAnagram().isAnagramFasterSolution(input_1, input_2)
 
-        val nums1 = intArrayOf(1,2,2,1)
-        val nums2 = intArrayOf(2,2,)
-        IntersectionOfTwoArraysII().intersect(nums1, nums2)
+//        val nums1 = intArrayOf(1,2,2,1)
+//        val nums2 = intArrayOf(2,2,)
+//        IntersectionOfTwoArraysII().intersect(nums1, nums2)
+
+        val row1 = intArrayOf(0,1,0,0)
+        val row2 = intArrayOf(1,1,1,0)
+        val row3 = intArrayOf(0,1,0,0)
+        val row4 = intArrayOf(1,1,0,0)
+        val input = listOf(row1, row2, row3, row4).toTypedArray()
+        IslandPerimeter().islandPerimeter(input)
     }
 }
