@@ -45,11 +45,15 @@ object Main {
 //        val nums2 = intArrayOf(2,2,)
 //        IntersectionOfTwoArraysII().intersect(nums1, nums2)
 
-        val row1 = intArrayOf(0,1,0,0)
-        val row2 = intArrayOf(1,1,1,0)
-        val row3 = intArrayOf(0,1,0,0)
-        val row4 = intArrayOf(1,1,0,0)
-        val input = listOf(row1, row2, row3, row4).toTypedArray()
-        IslandPerimeter().islandPerimeter(input)
+//        val row1 = intArrayOf(0,1,0,0)
+//        val row2 = intArrayOf(1,1,1,0)
+//        val row3 = intArrayOf(0,1,0,0)
+//        val row4 = intArrayOf(1,1,0,0)
+//        val input = listOf(row1, row2, row3, row4).toTypedArray()
+//        IslandPerimeter().islandPerimeter(input)
+
+        val timeSeries =intArrayOf(1, 4)
+        val duration = 2
+        TeemoAttacks().findPoisonedDuration(timeSeries, duration)
     }
 }
