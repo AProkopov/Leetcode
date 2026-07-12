@@ -52,8 +52,12 @@ object Main {
 //        val input = listOf(row1, row2, row3, row4).toTypedArray()
 //        IslandPerimeter().islandPerimeter(input)
 
-        val timeSeries =intArrayOf(1, 4)
-        val duration = 2
-        TeemoAttacks().findPoisonedDuration(timeSeries, duration)
+//        val timeSeries =intArrayOf(1, 4)
+//        val duration = 2
+//        TeemoAttacks().findPoisonedDuration(timeSeries, duration)
+
+        val input = 26
+        val result = ExcelColumnSheetTitle().convertToTitle(input)
+        val x = 0
     }
 }
